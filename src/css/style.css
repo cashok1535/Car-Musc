@@ -1,0 +1,811 @@
+html {
+  background-color: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 1000px;
+  background: url('../img/backgroundHeader.png') no-repeat;
+  background-size: cover;
+}
+
+.headerNavbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+  max-width: 1246px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.headerNavbar__elements {
+  display: flex;
+  gap: 40px;
+  font-family: 'ReformaGroteskMedium', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.header__search {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.search__element.inActive {
+  transform: translateX(-10px);
+}
+
+.search__element {
+  height: 3px;
+  width: 40px;
+  background-color: #DB3138;
+  transition: all .5s;
+}
+
+.headerTitle {
+  color: #DB3138;
+  font-family: 'ReformaGroteskBold', sans-serif;
+  font-size: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 168px;
+  line-height: 187.5px;
+}
+
+.next__headerTitle--element {
+  height: 10px;
+  width: 10px;
+  background: #DB3138;
+  transform: rotate(45deg);
+}
+
+.next__headerTitle {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 6px;
+}
+
+.headerText {
+  color: #fff;
+  font-family: 'ReformaGroteskMedium', sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  max-width: 437px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.headerButton {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  font-size: 24px;
+  line-height: 33.6px;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  padding: 15px 25px;
+}
+
+.headerAction{
+  display: flex;
+  justify-content: center;
+  margin: 55px 0;
+  margin-bottom: 103px;
+}
+
+.headerButton span {
+  z-index: 3;
+}
+
+.headerButton__back {
+  height: 60px;
+  background-color: #DB3138;
+  width: 185.89px;
+  position: absolute;
+  top: 0px;
+  left: -225px;
+  transition: all .5s;
+}
+
+.headerInfo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.headerInfo__element {
+  height: 171px;
+  width: 100%;
+  border: 1px solid #ffffff25;
+  padding-top: 43px;
+}
+
+.headerInfo__element--title {
+  color: #fff;
+  font-family: "ReformaGroteskDemi", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.headerInfo__element--text {
+  color: #DB3138;
+  font-family: "ReformaGroteskDemi", sans-serif;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 33.6px;
+  max-width: 265px;
+}
+
+.main {
+  margin-top: 180px;
+}
+
+.achivment {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1296px;
+  gap: 24px;
+}
+
+.achivmentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.achivmentInfo__title {
+  color: #fff;
+  font-family: "ReformaGroteskDemi", sans-serif;
+  font-size: 52px;
+  letter-spacing: 1px;
+  line-height: 72px;
+  max-width: 636px;
+}
+
+.achivmentInfo__img {
+  display: flex;
+  gap: 29.93px;
+}
+
+.achivmentInfo__text {
+  color: #fff;
+  font-family: "ReformaGroteskMedium", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 28.8px;
+  max-width: 636px;
+}
+
+.achivmentTable {
+  display: flex;
+}
+
+.achivmentTableFirst {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableFirst__element {
+  border: 1px solid #898989;
+  height: 177px;
+  width: 318px;
+}
+
+.tableFirst__element__title {
+  font-family: "ReformaGroteskDemi", sans-serif;
+  color: #DB3138;
+  font-size: 52px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.tableFirst__element__title span {
+  font-size: 24px;
+}
+
+.tableFirst__element__text {
+  font-family: "ReformaGroteskDemi", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  max-width: 277px;
+}
+
+.achivmentTableSecond {
+  position: relative;
+  top: 40px;
+}
+
+.slider {
+  max-width: 1350px;
+  padding-top: 180px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slider-line {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  transform: translate(670px);
+  transition: all .5s;
+}
+
+.sliderButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sliderParent {
+  position: relative;
+  margin-bottom: 180px;
+}
+
+.sliderButton_left {
+  position: absolute;
+  left: 5%;
+  top: 320px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sliderButton_right {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 320px;
+  right: 5%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-line__element img {
+  z-index: -2;
+}
+
+.slider-line__element--text {
+  color: #fff;
+  font-family: "ReformaGroteskDemi", sans-serif;
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  top: -30px;
+  left: 25px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  width: 366px;
+  cursor: pointer;
+}
+
+.slider--text {
+  width: 286px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.background__SliderText {
+  position: absolute;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  top: -150px;
+  background-color: #DB3138;
+  width: 366px;
+  height: 135px;
+  margin: 0 auto;
+  transition: all .5s;
+  z-index: 2;
+}
+
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  gap: 134px;
+}
+
+.aboutUsSecond {
+  display: flex;
+  justify-content: center;
+  gap: 134px;
+  margin-bottom: 180px;
+}
+
+.aboutUs__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 549px;
+}
+
+.aboutUsSecond__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 549px;
+}
+
+.AboutUs__info--title {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  font-family: "ReformaGroteskDemi", sans-serif;
+  font-size: 32px;
+  line-height: 44.8px;
+  letter-spacing: 1px;
+}
+
+.AboutUs__info--title img {
+  margin-right: 36.53px;
+}
+
+.AboutUs__info--text {
+  margin-top: 30px;
+  color: #fff;
+  font-family: "ReformaGroteskMedium", sans-serif;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 2px;
+}
+
+.figures {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.aboutUs__sliderNavigation {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+  color: #fff;
+  font-family: "ReformaGroteskDemi", sans-serif;
+  font-size: 18px;
+  line-height: 25.2px;
+  text-align: center;
+  letter-spacing: 1px;
+  max-width: 600px;
+  margin-top: 40px;
+  position: relative;
+  left: 30px;
+}
+
+.aboutUs__left--button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.aboutUsSecond__left--button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.aboutUs__right--button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.aboutUsSecond__right--button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.slider__line {
+  display: flex;
+  transform: translate(0px);
+  transition: all .5s;
+}
+
+.sliderSecond__line {
+  display: flex;
+  transform: translate(0px);
+  transition: all .5s;
+}
+
+.aboutSlider {
+  max-width: 640px;
+  overflow: hidden;
+}
+
+.sliderElement {
+  padding: 0 25px;
+}
+
+.services {
+  margin-bottom: 180px;
+}
+
+.services__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.serviceButton {
+  margin: 0px;
+}
+
+.serviceButton {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  font-size: 24px;
+  line-height: 33.6px;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  padding: 15px 25px;
+  margin: 61px 0 80px 0;
+}
+
+.serviceButton span {
+  z-index: 2;
+}
+
+.serviceButton__back {
+  height: 60px;
+  background-color: #DB3138;
+  width: 185.89px;
+  position: absolute;
+  top: 0px;
+  left: -225px;
+  transition: all .5s;
+}
+
+.servicesAbout {
+  display: flex;
+  margin: 0 auto;
+  gap: 24px;
+  max-width: 1296px;
+}
+
+.servicesAbout__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border: 1px solid #898989;
+  padding: 60px 0 50px 0;
+}
+
+.servicesAbout__element img {
+  width: 70px;
+  margin-bottom: 27.23px;
+}
+
+.services--title {
+  color: #fff;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  font-size: 52px;
+  line-height: 33.6px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 180px 0 40px 0;
+}
+
+.services--text {
+  color: #fff;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  line-height: 22.4px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.services--button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  font-size: 18px;
+  line-height: 33.6px;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.services--button span {
+  z-index: 2;
+}
+
+.services--button__background {
+  height: 60px;
+  background-color: #DB3138;
+  width: 185.89px;
+  position: absolute;
+  top: 0px;
+  left: -225px;
+  transition: all .5s;
+}
+
+.works__grid--images {
+  display: grid;
+  grid-template-columns: 305px 305px 305px 305px 305px 305px;
+  grid-template-rows: 280px 280px 280px;
+  margin: 61px 0 120px 0;
+}
+
+.works--title {
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  color: #fff;
+  font-size: 52px;
+  line-height: 72.8px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form--title {
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  color: #fff;
+  font-size: 52px;
+  line-height: 72.8px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__inputs {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 60.86px 0 24px 0;
+}
+
+.input {
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 1px;
+  padding: 15px 0 10px 25px;
+  width: 301px;
+  background-color: #141414;
+  border: 1px solid #898989;
+}
+
+.input:focus::placeholder {
+  color: #fff;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #DB3138;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 636px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.bigInput {
+  width: 526px;
+  padding: 15px 0 113px 25px;
+  background-color: #141414;
+  border: 1px solid #898989;
+  outline: none;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 1px;
+}
+
+.bigInput::placeholder {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  color: #898989;
+}
+
+.bigInput:focus {
+  outline: none;
+  border: 1px solid #DB3138;
+}
+
+.bigInput:focus::placeholder {
+  color: #fff;
+}
+
+.form__med {
+  position: relative;
+}
+
+.social__element {
+  border: 1px solid #898989;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.form--button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  font-size: 24px;
+  line-height: 33.6px;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  padding: 15px 25px;
+}
+
+.form--button span {
+  z-index: 2;
+}
+
+.form--button__background {
+  height: 60px;
+  background-color: #DB3138;
+  width: 185.89px;
+  position: absolute;
+  top: 0px;
+  left: -225px;
+  transition: all .5s;
+}
+
+.form__bottom {
+  margin-top: 24px;
+  display: flex;
+  gap: 164px;
+}
+
+
+.form__bottom__infoAll {
+  text-align: right;
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  color: #fff;
+  line-height: 22.4px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.form__bottom__info img {
+  margin-right: 10px;
+}
+
+.form__bottom__infoWhere img {
+  margin-right: 10px;
+}
+
+.form__bottom__infoWhere {
+  display: flex;
+  align-items: center;
+}
+
+.form__bottom__contacts {
+  display: flex;
+  gap: 30px;
+  justify-content: right;
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.contacts__email {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.footer {
+  width: 100%;
+  height: 89px;
+  border-top: 1px solid #898989;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.footer--text {
+  font-family: 'ReformaGroteskDemi', sans-serif;
+  color: #898989;
+  letter-spacing: 1px;
+}
+
+.footer--bar {
+  display: flex;
+  gap: 40px;
+  font-family: 'ReformaGroteskMedium', sans-serif;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: 1px;
+}
+
+
+.toRight::before {
+  content: "";
+  position: absolute;
+  background-color: #DB3138;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: all .5s;
+}
+
+.toRight:hover::before {
+  width: 100%;
+}
+
+.toBottom::before {
+  content: "";
+  position: absolute;
+  background-color: #DB3138;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  transition: all .5s;
+}
+
+.toBottom:hover::before {
+  height: 100%;
+}
