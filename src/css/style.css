@@ -564,9 +564,14 @@ a {
 
 .works__grid--images {
   display: grid;
-  grid-template-columns: 305px 305px 305px 305px 305px 305px;
-  grid-template-rows: 280px 280px 280px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 61px 0 120px 0;
+  box-sizing: border-box;
+}
+
+.works__grid--images img{
+  max-width: 320px;
+  width: 100%;
 }
 
 .works--title {
